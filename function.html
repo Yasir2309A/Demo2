@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Function</h1>
+    
+    <button onclick="black()">Black theme</button> <br> <br>
+    <button onclick="white()">White theme</button>
+
+
+    <script>
+
+        function black(){
+             document.body.style.backgroundColor = "black";
+             document.body.style.color = "white";
+        }
+
+        function white(){
+             document.body.style.backgroundColor = "white";
+             document.body.style.color = "black";
+        }
+         
+         function myfunction(){
+              
+            console.log("Hey coders");
+            console.log("Hello World");
+         }
+
+         myfunction();
+         myfunction();
+
+         function name(user){
+            document.write(`Hello ${user} <br>`);
+         }
+
+         name("Ali");
+         name("Umer");       
+         name("Awais");
+         name("Awais");
+         name("Awais");
+
+         function sum(a,b){
+           let res = a + b;
+           document.write(`${a} + ${b} = ${res} <br>`);
+         }
+
+         sum(10,5);
+         sum(15,8);
+
+    </script>
+</body>
+</html>

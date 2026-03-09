@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#btn1{
+     background-color: black;
+     padding: 12px 16px;
+     border: none;
+     color: white;
+}
+
+</style>
+<body>
+
+    <button onclick="black()" id="btn1">Black theme</button>
+    <button onclick="white()" id="btn1">Normal theme</button>
+
+
+    
+        
+         <input type="text" id="user" placeholder="Enter a user Name">
+         <button type="button" onclick="cal()">Submit</button>
+
+     
+
+      <h2 id="show"></h2>
+    
+    <script>
+
+    function cal(){
+       let myuser =    document.getElementById("user").value;
+       document.getElementById("show").innerHTML = `Welcome to ${myuser}`;
+    }
+
+
+        // function cal(){
+        //   let number1 =    document.getElementById("num1").value;
+        //   let number2 = document.getElementById("num2").value;
+
+        //   document.getElementById("show").innerHTML = `${number1}  ${number2}`
+        // }
+
+       function black(){
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          
+       }
+
+       function white(){
+         document.body.style.backgroundColor = "white";
+         document.body.style.color = "Black"
+       }
+
+
+
+
+       
+
+         function hello(){
+             document.write("Hello World <br>");
+             document.write("Hey Coders <br>");
+         }
+
+        //  hello();
+        //  hello();
+
+         function employe(user){
+             document.write(`Welcome to ${user} <br>`);
+         }
+
+        //  employe("Hashir");
+        //  employe("Ali");
+        //  employe("Umer");
+        //  employe("Awais");
+        //  employe("Hamza");
+        //  employe("Sarim");
+
+         function sum(a,b){
+             let res = a + b;
+             document.write(`${a} + ${b} = ${res} <br>`)
+         }
+
+        //  sum(20,45);
+        //    sum(25,15);
+    </script>
+</body>
+</html>

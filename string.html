@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "Ubaid";
+
+        console.log(str.length);
+        console.log(str[1]);
+
+        let result = str.toLocaleUpperCase();
+        console.log(result);
+
+        let res = str.toLocaleLowerCase();
+        console.log(res)
+
+
+        let name = " Muhammad Umair   ";
+        let r = name.trim();
+
+         console.log(r)
+        let a = 10;
+        let b = 5;
+
+        console.log("A + b = " + (a + b))
+        console.log(`A + b = ${a + b}`)
+        console.log(`A${a} + b${b} + = ${a + b}`);
+        console.log(` A = \t ${a} \n B = ${b} \n A * b  = ${a * b}`);
+
+
+        let user = prompt("Enter Your Name")
+        let roll = prompt("Enter Your Roll NUmber")
+
+         let Eng = Number(prompt("Enter english makrs"));
+         let urdu = Number(prompt("Enter urdu makrs"));
+         let math = Number(prompt("Enter math makrs"));
+        
+       let obt = Eng + urdu + math;
+       let total = 300;
+
+       let percentage = obt / total * (100);
+
+        let grade;
+
+        if(percentage >=80){
+            grade = "A+"
+        }
+        else if(percentage >=70)
+        {
+             grade = "A";
+        }
+
+      else{
+        grade = "f"
+      }
+
+      alert(`Name ${user} \n
+       Roll: ${roll}
+       Obtain Marks ${obt}
+       Percentage: ${percentage}
+       Grade: ${grade}
+      
+      `)
+
+    </script>
+</body>
+</html>

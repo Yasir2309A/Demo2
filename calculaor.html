@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .calculator{
+         width: 500px;
+          padding: 20px 35px;
+         background-color:antiquewhite ;
+         border: 1px solid black;
+         margin: auto;
+     }
+     h1{
+        text-align: center;
+     }
+     .inputs input{
+        width: 200px;
+        padding: 7px;
+        border: none;
+        border-radius: 10px;
+     }
+     .buttons{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 15px;
+         gap: 20px;
+     }
+     button{
+        
+     }
+</style>
+<body>
+    <div class="calculator">
+         <h1>Simple Calculator</h1>
+
+         <div class="inputs">
+             <input type="number" id="num1" placeholder="Enter a Number">
+             <input type="number" id="num2" placeholder="Enter a Number">
+         </div>
+
+         <div class="buttons">
+             <button onclick="add()" >ADD</button>
+             <button onclick="sub()">SUB</button>
+             <button onclick="devide()">/Devide</button>
+             <button onclick="multiply()">Multiply</button>
+         </div>
+
+         <div class="result">
+             <input type="number" id="res">
+             <button onclick="clears()">Clear</button>
+         </div>
+    </div>
+
+    <script>
+         function add(){
+            let value1 =  Number(document.getElementById("num1").value);
+            let value2 = Number(document.getElementById("num2").value);
+
+            let result = value1 + value2;
+            document.getElementById("res").value = result;
+         }
+
+         function sub(){
+             let value1 = Number(document.getElementById("num1").value);
+             let value2 = Number(document.getElementById("num2").value);
+
+             let result = value1 - value2;
+             document.getElementById("res").value = result;
+         }
+
+         function devide(){
+             let value1 = Number(document.getElementById("num1").value);
+             let value2 = Number(document.getElementById("num2").value);
+
+             let result = value1 / value2;
+             document.getElementById("res").value = result;
+         }
+
+         function multiply(){
+             let value1 = Number(document.getElementById("num1").value);
+             let value2 = Number(document.getElementById("num2").value);
+
+             let result = value1 * value2;
+             document.getElementById("res").value = result;
+         }
+
+         function clears(){
+             document.getElementById("num1").value = "";
+             document.getElementById("num2").value = "";
+             document.getElementById("res").value = "";
+         }
+    </script>
+</body>
+</html>

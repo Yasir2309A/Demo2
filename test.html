@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Take input from user
+        let studentName = prompt("Enter Student Name:");
+        let rollNumber = prompt("Enter Roll Number:");
+
+        let english = Number(prompt("Enter marks of english"));
+        let urdu = Number(prompt("Enter marks of urdu"));
+        let Maths = Number(prompt("Enter marks of Maths"));
+        let islamiat = Number(prompt("Enter marks of islamiat"));
+        let Physic = Number(prompt("Enter marks of physic"));
+
+        // 2. Store total marks
+        let totalMarks = 500;
+
+        // 3. Add all marks
+        let obtainedMarks = sub1 + sub2 + sub3 + sub4 + sub5;
+
+        // 4. Calculate percentage
+        let percentage = (obtainedMarks / totalMarks) * 100;
+
+        // 5. Create grade variable
+        let grade;
+
+        // 6. Assign grade using if else
+        if (percentage >= 80) {
+            grade = "A+";
+        } else if (percentage >= 70) {
+            grade = "A";
+        } else if (percentage >= 60) {
+            grade = "B";
+        } else if (percentage >= 50) {
+            grade = "C";
+        } else {
+            grade = "Fail";
+        }
+
+        // 7. Show result
+        alert(
+            "Student Name: " + studentName +
+            "\nRoll Number: " + rollNumber +
+            "\nObtained Marks: " + obtainedMarks +
+            "\nPercentage: " + percentage.toFixed(2) + "%" +
+            "\nGrade: " + grade
+        );
+
+    </script>
+</body>
+
+</html>
